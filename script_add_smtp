@@ -1,0 +1,3 @@
+#Script to add an smtp to an user's account
+
+Set-ADUser -Identity user_name -add @{proxyAddresses= 'smtp:user_name@domain.com.br' -split ";"}
