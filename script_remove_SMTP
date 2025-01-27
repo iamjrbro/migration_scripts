@@ -1,0 +1,3 @@
+#Script to remove an SMTP from an user's account
+
+Set-ADUser -Identity user_name -remove @{proxyAddresses= 'SMTP:user_name@domain.com.br' -split ";"}
