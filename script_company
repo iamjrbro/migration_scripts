@@ -1,0 +1,3 @@
+#Script to change an user's Company
+
+Set-ADUser -Identity "user_name" -Company "company_name"
